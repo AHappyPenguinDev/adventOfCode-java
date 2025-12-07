@@ -1,0 +1,38 @@
+Shop database = csv of ranges of ids
+range gives first and last IDs separated by a dash
+
+Id invalido = sequencia repetida 2 vezes (por exemplo, 11151115)
+
+    Para ter um id invalido, quantidade de numeros no id precisa ser PAR
+    Se não for, vá para o próximo imediatamente
+
+Dada uma range de numeros, cheque se existe alguma sequencia em que os numeros se repetem
+
+998 - 1012
+    Se o primeiro numero começar com uma quantidade IMPAR de numeros, adicione 1 até que seja par
+1000 - 1012
+    Se o id começa com 0, é invalido
+0101 != id
+    Quebre o número no MEIO e adicione 1, à metade da direita até que seja igual à da esquerda
+10 00 
+10 01 
+10 02 
+10 03 
+10 04 
+10 05 
+10 06 
+10 07 
+10 08 
+10 09 
+10 10 *
+    Concatene número e adicione ao total de IDs invalidos
+invalidIds += 1010
+
+
+If right is greater than left, add 1 to left and make right 00
+3070-3333
+
+30 70
+
+
+
